@@ -2,6 +2,11 @@
  * Write a function that returns "raspberry !" if the provided fruit is a raspberry, and "doh !" otherwise
  */
 export function basicCondition(fruit) {
+    if (fruit==="raspberry"){
+     return "raspberry !"   
+    } else {
+        return "doh !"
+    }
     
 }
 
@@ -18,7 +23,12 @@ export function guessTheNumber(n) {
  * Write a function that computes the sum of the two given integer values. If the two values are the same, then return triple their sum
  */
 export function sumOrTriple(a, b) {
-    
+    var c = a + b 
+    if (a===b) {
+        return 3*c 
+    } else {
+        return c
+    }
 }
 
 /**

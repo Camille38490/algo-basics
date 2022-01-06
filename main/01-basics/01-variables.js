@@ -17,8 +17,9 @@ export function sum(a, b) {
  * 
  * @returns the temperature converted to Fahrenheit
  */
-export function celciusToFahrenheit(celciusTemperature) {
-    return (celciusTemperature * 9/5 + 32)
+
+export function celciusToFahrenheit(celciusTemperature) { 
+    return celciusTemperature * 9/5 + 32
 }
 
 /**
@@ -34,14 +35,14 @@ export function isGreaterThan8(word) {
  * Write a XOR function, which is the exclusive version of the OR
  */
 export function xor(a, b) {
-    
+    return a !== b
 }
 
 /**
  * Similarily, write a XNOR function, also called equivalence, which returns true only if both boolean arguments are true or false
  */
 export function xnor(a, b) {
-    
+    return !xor(a, b)
 }
 
 /**
